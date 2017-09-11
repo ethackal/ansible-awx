@@ -1,0 +1,11 @@
+---
+- name: Build and deploy AWX
+  hosts: all
+  gather_facts: false
+  vars:
+    awx_local_base_config_path: ./build
+  roles:
+    - { role: check_vars }
+    - { role: swx_build }
+
+

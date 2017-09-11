@@ -117,3 +117,6 @@ venv/*
 use_dev_supervisor.txt
 
 .idea/*
+
+# Installer
+/installer/build

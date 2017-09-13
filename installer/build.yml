@@ -2,10 +2,9 @@
 - name: Build and deploy AWX
   hosts: all
   gather_facts: false
-  vars:
-    awx_local_base_config_path: ./build
+  vars_files:
+    - vars.yml
   roles:
     - { role: check_vars }
     - { role: swx_build }
-
 
